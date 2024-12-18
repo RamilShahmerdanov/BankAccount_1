@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Account</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="head">Welcome to My Bank Account App</h1>
+      <h2 class="head2">
+        <strong>Your Balance:</strong><span id="balance">0</span>₼
+      </h2>
+      <div class="container">
+        <form>
+          <label for="deposit">Deposit</label>
+          <input type="number" id="deposit" placeholder="Enter amount" />
+          <button id="depositBtn" type="button">OK</button>
+        </form>
+        <form>
+          <label for="withdraw">Withdraw</label>
+          <input type="number" id="withdraw" placeholder="Enter amount" />
+          <button id="withdrawBtn" type="button">OK</button>
+        </form>
+      </div>
+      <div class="back" id="back"></div>
+
+      <div class="errorbox" id="errormes">
+        <p>You do not have money</p>
+        <button type="button" id="errorok">OK</button>
+      </div>
+
+      <h2 class="histext">Transaction History</h2>
+      <div class="tablehistory">
+        <table id="transaction">
+          <thead>
+            <tr>
+              <th>Operation</th>
+              <th>Amount</th>
+              <th>Current Balance</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <tr>
+              <td>Deposit</td>
+              <td>3000</td>
+              <td>history</td>
+              <td>Date</td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </header>
+    <script src="./index.js"></script>
+  </body>
+</html>
